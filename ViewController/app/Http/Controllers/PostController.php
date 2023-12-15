@@ -4,15 +4,15 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class ResourceController extends Controller
+class PostController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        //
-        return "Hiển thị danh sách bài viết";
+        // Hiển thị danh sách bài viết:
+        return view("post");
     }
 
     /**
@@ -20,8 +20,7 @@ class ResourceController extends Controller
      */
     public function create()
     {
-        // Xử lý thêm dữ liệu
-        return redirect() -> route('product.index');
+        //
     }
 
     /**
@@ -38,7 +37,6 @@ class ResourceController extends Controller
     public function show(string $id)
     {
         //
-        return "Show element";
     }
 
     /**
@@ -55,7 +53,6 @@ class ResourceController extends Controller
     public function update(Request $request, string $id)
     {
         //
-        return "Update element";
     }
 
     /**
@@ -64,6 +61,5 @@ class ResourceController extends Controller
     public function destroy(string $id)
     {
         //
-        return "Delete element";
     }
 }
