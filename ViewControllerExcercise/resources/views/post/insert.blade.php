@@ -1,0 +1,5 @@
+@extends('post.parent')
+@section('title-page', 'Thêm người dùng mới')
+@section('title-form', 'Điền thông tin người dùng mới')
+@section('form-content')
+@section('btn-content', 'Thêm người dùng')

@@ -20,7 +20,7 @@
             <div id="sidebar">
                 @section('sidebar')
                     <p>Khối tìm kiếm</p>
-                @endsection
+                @show
             </div>
         </div>
         <div id="footer">
