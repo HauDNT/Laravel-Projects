@@ -35,13 +35,15 @@
             </tr>
         </thead>
         <tbody>
-            <tr>
+            <tr>    
                 <th>1</th>
                 <td>Nguyễn Văn A</td>
                 <td>0931235674839</td>
                 <td>0941246578</td>
                 <td>
-                    <a href="{{ route('update') }}">Cập nhật</a>
+                    <a href="{{ route('update', ['id' => 1]}}">
+                        Cập nhật
+                    </a>
                 </td>
             </tr>
         </tbody>
