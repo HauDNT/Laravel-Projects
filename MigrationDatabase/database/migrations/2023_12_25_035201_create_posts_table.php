@@ -6,13 +6,19 @@ use Illuminate\Support\Facades\Schema;
 
 return new class extends Migration
 {
+    /**
+     * Run the migrations.
+     */
     public function up(): void
     {
         Schema::create('posts', function (Blueprint $table) {
-            $table->id();
-            $table->string('title', 200);
-            $table->text('content')->nullable();
-            $table->timestamps();
+            $table -> id();
+            $table -> string('title', 200);
+            $table -> text('content');
+            $table -> unsignedBigInteger('user_id');
+            $table -> foreign('user_id') -> references('id') -> on ('users') -> onDelete('cascade');
+
+            $table -> timestamps();
         });
     }
 
